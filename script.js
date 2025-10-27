@@ -15,7 +15,7 @@ function showLogin() {
       <button class="first-button" onclick="showWelcome()">Назад</button>
       <h3>Войти в кабинет</h3>
       <input type="password" id="pass" placeholder="Пароль" />
-      <button class="sendMsg" onclick="login()">Войти</button>
+      <button onclick="login()">Войти</button>
     </div>`;
 }
 
