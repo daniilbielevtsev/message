@@ -1,0 +1,63 @@
+/* styles.css: стилизация по макету */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  /* Градиентный фон */
+  background: linear-gradient(to bottom, #717171, #aaaaaa);
+  color: #fff;
+}
+.hidden { display: none; }
+h1 {
+  text-align: center;
+  margin-top: 40px;
+}
+button {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  background: #000; /* черная кнопка */
+  color: #fff;
+  border: none;
+  border-radius: 10px; /* закругленные края */
+  cursor: pointer;
+}
+button:hover {
+  background: #333;
+}
+input, textarea {
+  display: block;
+  width: 80%;
+  margin: 10px auto;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+}
+.error {
+  color: #ff6666;
+  text-align: center;
+}
+/* Стили карточки сообщения */
+.message-card {
+  background: #fff;
+  color: #000;
+  margin: 10px auto;
+  padding: 10px;
+  width: 80%;
+  border-radius: 8px;
+  position: relative;
+}
+.message-card h3 {
+  margin: 0 0 5px 0;
+}
+.message-card button {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  background: transparent;
+  color: #888;
+  font-size: 18px;
+  border: none;
+}
+.message-card button:hover {
+  color: #f00;
+}

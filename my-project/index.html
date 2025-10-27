@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Обмен сообщениями</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <!-- Главный экран -->
+  <div id="main-screen">
+    <h1>Здравствуйте!</h1>
+    <button id="btn-send">Отправить сообщение</button>
+    <button id="btn-view">Просмотреть сообщения</button>
+  </div>
+
+  <!-- Экран ввода пароля -->
+  <div id="password-screen" class="hidden">
+    <h1>Требуется пароль</h1>
+    <input type="password" id="password-input" placeholder="Введите пароль">
+    <button id="btn-ok">OK</button>
+    <p id="pw-error" class="error"></p>
+  </div>
+
+  <!-- Экран отправки сообщения -->
+  <div id="message-screen" class="hidden">
+    <h1>Отправить сообщение</h1>
+    <input type="text" id="name-input" placeholder="Имя">
+    <textarea id="text-input" placeholder="Текст сообщения"></textarea>
+    <button id="btn-submit">Отправить</button>
+  </div>
+
+  <!-- Экран подтверждения -->
+  <div id="confirm-screen" class="hidden">
+    <h1>Успех!</h1>
+    <p>Сообщение отправлено.</p>
+    <button id="btn-confirm">OK</button>
+  </div>
+
+  <!-- Экран просмотра сообщений -->
+  <div id="view-screen" class="hidden">
+    <h1>Сообщения</h1>
+    <div id="messages-list"></div>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>
